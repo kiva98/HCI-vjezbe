@@ -4,8 +4,9 @@ import NavigationBar from '../NavigationBar'
 import Combobox from '../Combobox'
 import styles from './style.module.css'
 
+//dodano className
 const Navigation = ({ activeTab }) => (
-  <section>
+  <section className={styles.navigation}>
       <NavigationBar activeTab={activeTab} />
       <Combobox />
   </section>

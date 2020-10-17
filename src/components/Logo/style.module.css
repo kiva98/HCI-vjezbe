@@ -4,12 +4,13 @@
   display: flex;
   flex-flow: column;
   width: fit-content;
+  height: 52px;
 }
 
 /*iz nekog razloga ne učitava font???*/
 .logoText {
   font-family: "Great Vibes";
-  font-size: 52px
+  font-size: 52px;
 }
 
  .sub {
