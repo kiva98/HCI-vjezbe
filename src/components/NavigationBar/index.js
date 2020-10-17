@@ -1,13 +1,15 @@
 import React from 'react'
-
+ 
 import styles from './style.module.css'
 
-const NavigationBar = () => (
+const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
+
+//na njegovim uputama su falile normalne zagrade oko {activeTab}
+const NavigationBar = ({activeTab}) => (
   <nav className={styles.navigationBar}>
-      <li className={styles.active}>Home</li>
-      <li>Accommodation</li>
-      <li>Photo gallery</li>
-      <li>Contact</li>
+    {navTabs.map(tab => <li className={tab === activeTab ? styles.active : ''}>
+      {tab}</li>
+    )}
   </nav>
 )
 
